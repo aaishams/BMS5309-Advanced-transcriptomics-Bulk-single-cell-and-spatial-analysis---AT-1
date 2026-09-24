@@ -10,7 +10,7 @@ input_dir=/home/amoh0254/amoh0254_BMS5309_AT1/trimmomatic
 output_dir=/home/amoh0254/amoh0254_BMS5309_AT1/hisat2
 mkdir -p "$output_dir"
 
-# Pair up the files
+# Find the pair files
 for file1 in "$input_dir"/*_R1.trim_pe.fastq  
 do   
 file2="${file1/_R1.trim_pe.fastq/_R2.trim_pe.fastq}"   
@@ -20,6 +20,8 @@ continue
 fi   
 sample_name=$(basename "$file1"_R1.trim_pe.fastq)  
 output_sam="${output_dir}/${sample_name}.hisat2.sam"   
+
+# Run HISAT2 genome alignment
 echo "Aligning sample: $sample_name"   
 hisat2 -x "$reference_genome" -1 "$file1" -2 "$file2" -S "$output_sam"  
 done  
