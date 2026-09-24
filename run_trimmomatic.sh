@@ -4,7 +4,7 @@
 module load trimmomatic
 module avail trimmomatic
 
-# Assign the input and output sources
+# Assign input and output directories
 input_dir=~/AT1_data
 output_dir=~/amoh0254_BMS5309_AT1/trimmomatic
 mkdir -p "$output_dir"
