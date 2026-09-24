@@ -5,7 +5,7 @@ module load samtools
 module avail samtools
 
 # Assign input and output directories
-input_dir=~/analysis/trimmomatic
+input_dir=~/analysis/hisat2
 output_dir=~/analysis/aligned_sorted_bam  
 mkdir -p $output_dir  
 
