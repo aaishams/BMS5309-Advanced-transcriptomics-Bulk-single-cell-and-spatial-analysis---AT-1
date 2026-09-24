@@ -6,7 +6,7 @@ module avail subread
 
 # Assign all the required directory locations
 reference_gtf="/home/amoh0254/mouse_reference/Mus_musculus.GRCm39.110.gtf"
-bam_dir="/home/amoh0254/amoh0254_BMS5309_AT1/hisat2"  
+bam_dir="/home/amoh0254/amoh0254_BMS5309_AT1/aligned_sorted_bam"  
 output_dir="/home/amoh0254/amoh0254_BMS5309_AT1/feature_counts"
 output_file="combined_counts.txt"  
 mkdir -p "$output_dir"  
