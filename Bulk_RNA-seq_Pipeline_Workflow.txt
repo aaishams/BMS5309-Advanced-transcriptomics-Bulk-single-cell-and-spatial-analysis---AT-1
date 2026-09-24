@@ -1,0 +1,6 @@
+Order of Execution of the Bash files:
+
+1. Quality Control (QC) - run_fastqc.sh
+2. Adaptor Trimming - run_trimmomatic.sh & run_trimmed_fastqc.sh
+3. Read Alignment to Reference Genome - run_hisat2.sh
+4. Mapping and Quantification of Transcripts - run_samtools.sh & run_feature_counts.sh
